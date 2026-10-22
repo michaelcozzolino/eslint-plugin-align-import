@@ -19,6 +19,6 @@ jobs:
                 run: |
                     corepack enable
                     corepack prepare yarn@4 --activate
-                    yarn install --immutable
+                    yarn install
                     yarn lint
                     yarn test
