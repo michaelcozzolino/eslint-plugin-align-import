@@ -37,6 +37,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+.yarn/install-state.gz
 
 # TypeScript v1 declaration files
 typings/

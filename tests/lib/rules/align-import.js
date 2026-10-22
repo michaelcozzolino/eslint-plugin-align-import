@@ -15,8 +15,8 @@ const {RuleTester} = require('eslint');
 //------------------------------------------------------------------------------
 
 const ruleTester = new RuleTester({
-    parserOptions: {
-        ecmaVersion: 6,
+    languageOptions: {
+        ecmaVersion: 2015,
         sourceType: 'module'
     }
 });

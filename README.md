@@ -3,18 +3,20 @@
 </h3>
 
 <p align="center">
-  <a href="https://github.com/Simonwep/eslint-plugin-align-import/actions"><img
+  <a href="https://github.com/michaelcozzolino/eslint-plugin-align-import/actions"><img
      alt="Build Status"
-     src="https://img.shields.io/github/workflow/status/Simonwep/eslint-plugin-align-import/CI?style=flat-square"/></a>
-  <a href="https://www.npmjs.com/package/eslint-plugin-align-import"><img
+     src="https://img.shields.io/github/workflow/status/michaelcozzolino/eslint-plugin-align-import/CI?style=flat-square"/></a>
+  <a href="https://www.npmjs.com/package/@michaelcozzolino/eslint-plugin-align-import"><img
      alt="Download count"
      src="https://img.shields.io/npm/dm/eslint-plugin-align-import.svg?style=popout-square"></a>
   <img alt="Current version"
-       src="https://img.shields.io/github/tag/Simonwep/eslint-plugin-align-import.svg?color=3498DB&label=version&style=flat-square">
-  <a href="https://github.com/sponsors/Simonwep"><img
+       src="https://img.shields.io/github/tag/michaelcozzolino/eslint-plugin-align-import.svg?color=3498DB&label=version&style=flat-square">
+  <a href="https://github.com/sponsors/michaelcozzolino"><img
      alt="Support me"
      src="https://img.shields.io/badge/github-support-3498DB.svg?style=popout-square"></a>
 </p>
+
+> This package is a maintained fork of [simonwep/eslint-plugin-align-import](https://github.com/simonwep/eslint-plugin-align-import). It preserves the original plugin and adds compatibility with current ESLint versions.
 
 ### What is this?
 
@@ -53,27 +55,34 @@ import defaultExport3, * as name2      from "module-name";
 You'll first need to install [ESLint](http://eslint.org):
 
 ```
-$ npm install eslint --save-dev
+$ yarn add eslint --dev
 ```
 
 Next, install `eslint-plugin-align-import`:
 
 ```
-$ npm install eslint-plugin-align-import --save-dev
+$ yarn add eslint-plugin-align-import --dev
 ```
 
 **Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-align-import` globally.
 
 ### Usage
 
-Add `eslint-plugin-align-import` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Register the plugin in your `eslint.config.js` flat configuration:
 
-```json
-{
-    "plugins": [
-        "align-import"
-    ]
-}
+```js
+const alignImport = require('eslint-plugin-align-import');
+
+module.exports = [
+    {
+        plugins: {
+            'align-import': alignImport
+        },
+        rules: {
+            'align-import/align-import': 'error'
+        }
+    }
+];
 ```
 
 You might have to update the [`no-multi-spaces`](https://eslint.org/docs/rules/no-multi-spaces) rule to allow multiple spaces in front of `from`:
