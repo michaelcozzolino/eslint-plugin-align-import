@@ -16,13 +16,15 @@
         "lint": "eslint lib/**/*.js tests/**/*.js",
         "lint:fix": "eslint lib/**/*.js tests/**/*.js --fix"
     },
-    "dependencies": {},
     "devDependencies": {
-        "eslint": "^7.0.0",
-        "eslint-config-simon": "^1.3.0",
+        "eslint": "^10.13.0",
+        "globals": "^16.0.0",
         "mocha": "^7.1.2"
     },
+    "peerDependencies": {
+        "eslint": ">=8.0.0"
+    },
     "engines": {
-        "node": ">=12.16.3"
+        "node": ">=20.19.0"
     }
 }
