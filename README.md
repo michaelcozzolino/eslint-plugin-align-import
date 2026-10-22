@@ -55,13 +55,13 @@ import defaultExport3, * as name2      from "module-name";
 You'll first need to install [ESLint](http://eslint.org):
 
 ```
-$ yarn add eslint --dev
+$ yarn add eslint -D
 ```
 
-Next, install `eslint-plugin-align-import`:
+Next, install `@michaelcozzolino/eslint-plugin-align-import`:
 
 ```
-$ yarn add eslint-plugin-align-import --dev
+$ yarn add @michaelcozzolino/eslint-plugin-align-import -D
 ```
 
 **Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-align-import` globally.
