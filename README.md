@@ -24,29 +24,29 @@ This plugin / rule will align all your import statements:
 > from
 
 ```js
-import defaultExport from "module-name";
-import * as name  from "module-name";
-import { export1 } from "module-name";
-import { export2 as alias1 } from "module-name";
-import { export3 , export4 } from "module-name";
-import { foo , bar } from "module-name/path/to/specific/un-exported/file";
-import { export5 , export6 as alias7 } from "module-name";
-import defaultExport2, { export8 } from "module-name";
-import defaultExport3, * as name2 from "module-name";
+import defaultExport                  from 'module-name';
+import * as name                      from 'module-name';
+import { export1 }                    from 'module-name';
+import { export2 as alias1 }          from 'module-name';
+import { export3, export4 }           from 'module-name';
+import { export6 as alias7, export5 } from 'module-name';
+import defaultExport2, { export8 }    from 'module-name';
+import defaultExport3, * as name2     from 'module-name';
+import { bar, foo }                   from 'module-name/path/to/specific/un-exported/file';
 ```
 
 > to
 
 ```js
-import defaultExport                   from "module-name";
-import * as name                       from "module-name";
-import { export1 }                     from "module-name";
-import { export2 as alias1 }           from "module-name";
-import { export3 , export4 }           from "module-name";
-import { foo , bar }                   from "module-name/path/to/specific/un-exported/file";
-import { export5 , export6 as alias7 } from "module-name";
-import defaultExport2, { export8 }     from "module-name";
-import defaultExport3, * as name2      from "module-name";
+import defaultExport                  from 'module-name';
+import * as name                      from 'module-name';
+import { export1 }                    from 'module-name';
+import { export2 as alias1 }          from 'module-name';
+import { export3, export4 }           from 'module-name';
+import { export6 as alias7, export5 } from 'module-name';
+import defaultExport2, { export8 }    from 'module-name';
+import defaultExport3, * as name2     from 'module-name';
+import { bar, foo }                   from 'module-name/path/to/specific/un-exported/file';
 ```
 
 
@@ -90,7 +90,7 @@ You might have to update the [`no-multi-spaces`](https://eslint.org/docs/rules/n
 ```json
 {
     "rules": {
-        "no-multi-spaces": ["error", {"exceptions": {"ImportDeclaration": true}}]
+        "no-multi-spaces": ["error", { "exceptions": { "ImportDeclaration": true } }]
     }
 }
 ```

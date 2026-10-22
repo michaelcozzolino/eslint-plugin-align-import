@@ -2,7 +2,7 @@
     "name": "@michaelcozzolino/eslint-plugin-align-import",
     "type": "module",
     "version": "1.0.0",
-    "description": "Babel plugin to align your import statements.",
+    "description": "Plugin to align your import statements.",
     "author": "Michael Cozzolino",
     "contributors": [
         "Simon Reinisch <trash@reinisch.io>"
