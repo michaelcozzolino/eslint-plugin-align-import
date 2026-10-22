@@ -1,5 +1,5 @@
 {
-    "name": "eslint-plugin-align-import",
+    "name": "@michaelcozzolino/eslint-plugin-align-import",
     "version": "1.0.0",
     "description": "Babel plugin to align your import statements.",
     "license": "MIT",
@@ -16,7 +16,8 @@
     "scripts": {
         "test": "mocha tests --recursive",
         "test:watch": "mocha tests --recursive --watch",
-        "lint": "eslint . --fix"
+        "lint": "eslint . --fix",
+        "publish": "npm publish --access public"
     },
     "devDependencies": {
         "@michaelcozzolino/eslint-config": "^1.1.3",
