@@ -18,7 +18,6 @@ jobs:
             -   name: Install dependencies, build, lint and test
                 run: |
                     corepack enable
-                    corepack prepare yarn@4 --activate
                     yarn install
                     yarn lint
                     yarn test
