@@ -3,12 +3,9 @@
 </h3>
 
 <p align="center">
-  <a href="https://github.com/michaelcozzolino/eslint-plugin-align-import/actions"><img
-     alt="Build Status"
-     src="https://img.shields.io/github/workflow/status/michaelcozzolino/eslint-plugin-align-import/CI?style=flat-square"/></a>
-  <a href="https://www.npmjs.com/package/@michaelcozzolino/eslint-plugin-align-import"><img
+<a href="https://www.npmjs.com/package/@michaelcozzolino/eslint-plugin-align-import"><img
      alt="Download count"
-     src="https://img.shields.io/npm/dm/eslint-plugin-align-import.svg?style=popout-square"></a>
+     src="https://img.shields.io/npm/dm/@michaelcozzolino/eslint-plugin-align-import.svg?style=popout-square"></a>
   <img alt="Current version"
        src="https://img.shields.io/github/tag/michaelcozzolino/eslint-plugin-align-import.svg?color=3498DB&label=version&style=flat-square">
   <a href="https://github.com/sponsors/michaelcozzolino"><img
