@@ -9,10 +9,10 @@ This rule enforces consistend spacing around import keywords.
 Examples of **incorrect** code for this rule:
 
 ```js
-import    {CheckBox, InputField} from '@components';
-   import    {users, posts} from '@store';
-import    {createClassname} from '../utils/classname';
-  import   {on, off} from '../utils/events';
+import { CheckBox, InputField } from '@components';
+import { posts, users }         from '@store';
+import { createClassname }      from '../utils/classname';
+import { off, on }              from '../utils/events';
 ```
 
 
@@ -20,10 +20,10 @@ Examples of **correct** code for this rule:
 
 
 ```js
-import {CheckBox, InputField} from '@components';
-import {users, posts} from '@store';
-import {createClassname} from '../utils/classname';
-import {on, off} from '../utils/events';
+import { CheckBox, InputField } from '@components';
+import { posts, users }         from '@store';
+import { createClassname }      from '../utils/classname';
+import { off, on }              from '../utils/events';
 ```
 
 
