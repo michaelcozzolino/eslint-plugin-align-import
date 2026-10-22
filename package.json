@@ -3,7 +3,10 @@
     "version": "1.0.0",
     "description": "Babel plugin to align your import statements.",
     "license": "MIT",
-    "author": "Simon Reinisch <trash@reinisch.io>",
+    "author": "Michael Cozzolino",
+    "contributors": [
+        "Simon Reinisch <trash@reinisch.io>"
+    ],
     "main": "./lib/index.js",
     "keywords": [
         "eslint",
