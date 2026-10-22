@@ -1,8 +1,7 @@
 {
     "name": "@michaelcozzolino/eslint-plugin-align-import",
-    "packageManager": "yarn@4.11.0",
-    "type": "module",
     "version": "1.0.0",
+    "packageManager": "yarn@4.18.1",
     "description": "Plugin to align your import statements.",
     "author": "Michael Cozzolino",
     "contributors": [
