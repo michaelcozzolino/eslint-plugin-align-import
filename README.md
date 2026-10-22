@@ -53,27 +53,34 @@ import defaultExport3, * as name2      from "module-name";
 You'll first need to install [ESLint](http://eslint.org):
 
 ```
-$ npm install eslint --save-dev
+$ yarn add eslint --dev
 ```
 
 Next, install `eslint-plugin-align-import`:
 
 ```
-$ npm install eslint-plugin-align-import --save-dev
+$ yarn add eslint-plugin-align-import --dev
 ```
 
 **Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-align-import` globally.
 
 ### Usage
 
-Add `eslint-plugin-align-import` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Register the plugin in your `eslint.config.js` flat configuration:
 
-```json
-{
-    "plugins": [
-        "align-import"
-    ]
-}
+```js
+const alignImport = require('eslint-plugin-align-import');
+
+module.exports = [
+    {
+        plugins: {
+            'align-import': alignImport
+        },
+        rules: {
+            'align-import/align-import': 'error'
+        }
+    }
+];
 ```
 
 You might have to update the [`no-multi-spaces`](https://eslint.org/docs/rules/no-multi-spaces) rule to allow multiple spaces in front of `from`:
