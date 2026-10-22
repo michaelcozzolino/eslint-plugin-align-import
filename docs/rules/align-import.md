@@ -10,20 +10,19 @@ This rule aims to improve the readability of import statements.
 Examples of **incorrect** code for this rule:
 
 ```js
-import {CheckBox, InputField} from '@components';
-import {users, posts} from '@store';
-import {createClassname}      from '../utils/classname';
-import {on, off} from     '../utils/events';
-
+import { CheckBox, InputField } from '@components';
+import { posts, users }         from '@store';
+import { createClassname }      from '../utils/classname';
+import { off, on }              from '../utils/events';
 ```
 ```js
-import {CheckBox, InputField} from '@components';
-import {users, posts}         from '@store';
-import {createClassname}      from '../utils/classname';
+import { CheckBox, InputField } from '@components';
+import { posts, users }         from '@store';
+import * as styles              from '../styles/core';
 
+import { createClassname } from '../utils/classname';
 // Too much space between import and from part
-import {on, off}              from '../utils/events';
-import * as styles            from '../styles/core';
+import { off, on } from '../utils/events';
 ```
 
 
@@ -31,20 +30,20 @@ Examples of **correct** code for this rule:
 
 
 ```js
-import {CheckBox, InputField} from '@components';
-import {users, posts}         from '@store';
-import {createClassname}      from '../utils/classname';
-import {on, off}              from '../utils/events';
-import * as styles            from '../styles/core';
+import { CheckBox, InputField } from '@components';
+import { posts, users }         from '@store';
+import * as styles              from '../styles/core';
+import { createClassname }      from '../utils/classname';
+import { off, on }              from '../utils/events';
 ```
 
 ```js
-import {CheckBox, InputField} from '@components';
-import {users, posts}         from '@store';
-import {createClassname}      from '../utils/classname';
+import { CheckBox, InputField } from '@components';
+import { posts, users }         from '@store';
+import * as styles              from '../styles/core';
 
-import {on, off}   from '../utils/events';
-import * as styles from '../styles/core';
+import { createClassname } from '../utils/classname';
+import { off, on }         from '../utils/events';
 ```
 
 ## When Not To Use It
